@@ -9,6 +9,7 @@ InternshipCrawlModule.menu()
 
 choice = input("Please enter the number of your selection:\n")
 
+# menu interface
 if choice is '0':
     url = "http://www.internships.com/search/posts?Keywords=marketing%2C%20advertising%2C%20%22social%20media%22%2C%20%22public%20relations%22&page="
 elif choice is '1':
@@ -33,4 +34,5 @@ else:
     print("Invalid input")
     exit()
 
+#calls crawl function from module based on user choice
 InternshipCrawlModule.core_spider(10, url)
