@@ -3,9 +3,11 @@ from bs4 import BeautifulSoup
 
 ######################################################################################
 
+#web crawl function
 def core_spider(max, url):
     page = 1
-
+    
+    #gets a max of 10 pages as defined in main
     while page <= max:
         url = url + str(page)
 
@@ -21,6 +23,7 @@ def core_spider(max, url):
             print(href + "\n")
         page += 1
 
+#simple menu function
 def menu():
     print("Welcome to the Internship.com web-crawler.\n")
 
